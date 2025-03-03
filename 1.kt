@@ -40,7 +40,6 @@ val price=34
 when(price){
   0 -> println("free meal ")
   in 1..5 ->println("less price")
-  is Int -> println("its Integer type")
   else ->println("not on sale")
 }
 }
