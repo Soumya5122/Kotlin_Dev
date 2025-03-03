@@ -3,7 +3,44 @@ fun main(){
   age = 2
  
   val age1 = 44
-  age = 3
+  val str: String? =null //it can hold nullable data as well as other data
   //age1=43 cannot be reassigned
   println("Age of ${age} and age1 of ${age1}")
+  println(str)
+
+
+  // if loop 
+
+  
+  val i=17
+  val x = if (i<15){
+    println("i is small")
+    "small"
+    
+  }
+  else if(i>=15 && i<=25){
+    println("it's okay")
+    "medium"
+    
+  }
+  else{
+    println("it's pretty large")
+    "large"  //return value of  x if not assigned return Kotlin Unit
+  }
+  println(x)
+
+
+//if()
+//else if ()
+//else
+
+//when loop
+
+val price=34
+when(price){
+  0 -> println("free meal ")
+  in 1..5 ->println("less price")
+  is Int -> println("its Integer type")
+  else ->println("not on sale")
+}
 }
