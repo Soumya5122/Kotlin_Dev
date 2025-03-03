@@ -44,11 +44,19 @@ when(price){
 }
 
 //for loop
+//no need to intialize an value as val k as in java 
+for(k in 1..5){
+  println("$k")
+}
+for(j in 10 downTo 5 step 2){
+  println("$j")
+}
 
-for(i in 1..5){
-  println("$i")
+//while loop
+var q=1
+do {
+  print("$q")
+  q++
 }
-for(i in 10 downTo 5 step 2){
-  println("$i")
-}
+while(q<=10)
 }
