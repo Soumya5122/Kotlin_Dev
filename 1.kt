@@ -1,5 +1,6 @@
 fun main(){
-  var age = 2
+  var age: Int
+  age = 2
  
   val age1 = 44
   age = 3
