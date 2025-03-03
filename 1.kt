@@ -44,7 +44,7 @@ when(price){
 }
 
 //for loop
-val i
+
 for(i in 1..5){
   println("$i")
 }
