@@ -8,11 +8,14 @@ fun main()
 
   
   val p: MutableList<String> =mutableListOf("tr","tm")
-  println("${p.first()} ")
+  println("${p.first()}  $p")
   println("tr" in p)
   println("tr" !in p)
 
-  val list=set.toList()
+  val set = setOf("apple", "banana", "orange")
+  println(set)
+  val list = set.toList()
+  println(list)
 
 //LIST
 //.first()

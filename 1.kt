@@ -42,4 +42,13 @@ when(price){
   in 1..5 ->println("less price")
   else ->println("not on sale")
 }
+
+//for loop
+val i
+for(i in 1..5){
+  println("$i")
+}
+for(i in 10 downTo 5 step 2){
+  println("$i")
+}
 }
