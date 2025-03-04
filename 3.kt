@@ -4,8 +4,9 @@ fun main() {
 
   val randoms: MutableList<Int> = mutableListOf()
 
+  val random = Random()
   for (i in 1..100) {
-    randoms.add(Random().nextInt(100) + 1)
+    randoms.add(random.nextInt(100) + 1)
   }
 
   var i = 0
