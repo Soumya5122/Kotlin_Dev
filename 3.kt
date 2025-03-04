@@ -1,5 +1,5 @@
 import java.util.Random
-import Kotlin.io.IOException
+import kotlin.io.IOException
 fun main() {
 
   val randoms: MutableList<Int> = mutableListOf()
