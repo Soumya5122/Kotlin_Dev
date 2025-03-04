@@ -1,5 +1,5 @@
 import java.util.Random
-import kotlin.io.IOException
+import java.io.IOException
 fun main() {
 
   val randoms: MutableList<Int> = mutableListOf()
@@ -22,6 +22,7 @@ fun main() {
   //
   val input=try{
     getExternalInput()
+    " "
   }
   catch(e: IOException){
     println("Finished executing the error")
@@ -30,6 +31,8 @@ fun main() {
   finally{
     println("Done with solving error")
   }
+
+  println(input)
   
 }
 //named arguments and default parameter
