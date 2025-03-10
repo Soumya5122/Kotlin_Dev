@@ -46,6 +46,14 @@ fun main(){
 
 
   //zip
+  val list7=listOf("Hi","there","Kotlin")
+  val containsT=listOf(false,true,true)
+  val zipped: List<Pair<String,Boolean>> = list7.zip(containsT)
+
+  val mapping = list7.zip(list7.map { it.contains("t") })
+
+  println(zipped)
+  println(mapping)
 }
 
 
