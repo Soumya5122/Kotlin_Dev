@@ -54,6 +54,18 @@ fun main(){
 
   println(zipped)
   println(mapping)
+
+  //chaining 
+  val inputRows=listOf(
+    mapOf("input01.csv" to listOf(3,5,7,9,-345,2,6,8)),
+    mapOf("input02.csv" to listOf(1,2,4)),
+    mapOf("input03.csv" to listOf(34,467,34,11,7))
+  )
+  val cleaned=inputRows.flatMap{it.values}
+    .flatten()//converts an array into flat list
+    .filter { it in 0..100}
+    .toIntArray()
+  println(cleaned.joinToString())
 }
 
 
